@@ -1,4 +1,4 @@
-name: achievement-collector
+name: Data updater
 
 on:
   schedule:
