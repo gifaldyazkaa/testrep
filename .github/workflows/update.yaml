@@ -2,7 +2,7 @@ name: achievement-collector
 
 on:
   schedule:
-    - cron: '*/3 * * * *'
+    - cron: '*/2 * * * *'
 
 jobs:
   block_update:
@@ -26,6 +26,6 @@ jobs:
         uses: peter-evans/create-pull-request@v4
         with:
             token: ${{ secrets.PAT }}
-            commit-message: Update progress
-            title: Update progress
+            commit-message: "chore(data): update progress"
+            title: "chore(data): update progress"
             branch: update-progress
